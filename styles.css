@@ -1,0 +1,173 @@
+/* styles.css */
+
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #24292e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.video-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7); /* Adjust the background overlay as needed */
+    padding: 70px;
+}
+
+.video-overlay h2 {
+    font-size: 3.2rem;
+}
+
+.video-overlay p {
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+section.hero {
+    background: url('comic-background.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+section.hero h2 {
+    font-size: 2rem;
+}
+
+section.hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+section.hero a {
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+section.hero a:hover {
+    background-color: #ff5722;
+}
+
+section.featured {
+    display: grid; /* Change to a grid layout for better control */
+    grid-template-columns: repeat(7, 1fr); /* Show 4 comics per row */
+    gap: 20px;
+    margin: 20px;
+}
+
+.comic-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%; /* Ensure the cards don't exceed their container */
+}
+
+.comic-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);/*shadow*/
+    background-color: #fceded;
+}
+
+.comic-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.comic-card h4 {
+    font-size: 1rem; /* Make the heading smaller */
+    margin: 20px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.comic-card p {
+    font-size: 0.8rem; /* Make the text even smaller */
+}
+
+footer {
+    background-color: #24292e;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* styles.css */
+
+/* Your existing CSS rules here */
+
+/* Stylize the "Browse Now" button */
+.browse-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722; /* Button background color */
+    color: #fff; /* Text color */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.browse-button:hover {
+    background-color: #d84315; /* Change color on hover */
+}
+
+/* ... (remaining CSS rules) */
+
+/* Add more custom styling as needed */
