@@ -1,10 +1,10 @@
-const publicKey = '921b7bd5cc447b7c1afd5948b2ddedab';
-const privateKey = '38edf8f12481fe6b68193462848a40fac84471b3';
+const publicKey = b';
+const privateKey = '';
 const apiUrl = 'https://gateway.marvel.com/v1/public/comics';
-const limit = 28; // Change the limit to 20 to accommodate 20 comics
+const limit = 28; 
 const ts = 1;
 const hash = 'ae7cc04b72f12dc607f1e02867b7c6a2';
-const titleStartsWith = 'Miles '; // Filter for comics whose title starts with "Avengers"
+const titleStartsWith = 'Miles '; 
 
 function fetchComicData() {
     const url = `${apiUrl}?ts=${ts}&apikey=${publicKey}&hash=${hash}&limit=${limit}&titleStartsWith=${titleStartsWith}`;
@@ -41,5 +41,5 @@ function populateComicCards(comics) {
     });
 }
 
-// Trigger fetchComicData() as soon as the page loads
+
 fetchComicData();
